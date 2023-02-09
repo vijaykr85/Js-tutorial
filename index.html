@@ -5,15 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <script  defer src="js/first.js"></script> --> 
+    <!-- <script  defer src="js/first.js"></script> -->
+    <style>
+        .color{
+            color: red;
+            background-color: yellow;
+        }
+        .dem{
+            border: 1px solid red;
+            padding: 100px;
+            
+        }
+    </style> 
 
 </head>
 <body>
 
+    <!-- <button id="first" onclick="btn()">Click Me!</button> -->
+
+
+    <!--
+
+    <div id="box" class="color ">
+        <p> This is a dummy text </p>
+
+    </div>
+    
     <div id="intro">
         <p>Hello this is p tag</p>
     </div>
-    <!--
+    
 
     <ul  id="intro">
         <li>list 1</li>
@@ -44,7 +65,7 @@
         <h2>Heading 3</h2>
         <p class="intro">pragraph 3</p>
     </div>
-     -->
+    
 
      <ul id="list">
         <li>list 1</li>
@@ -52,19 +73,183 @@
         <li>list 3</li>
         <li>list 4</li>
      </ul>
+     
+
+      <ul id="menu">
+        <li>Home</li>
+        <li>Product</li>
+        <li>About us</li>
+      </ul>
+       
+
+       <ul id="menu">
+            <li>Home</li>
+            <li>product</li>
+            <li>Aboout</li>
+            <li> Contact</li>
+       </ul>
+       -->
+
+       <!--beforebegin-->
+       <!-- <div id="intro"> selected -->
+        <!-- afterbegin-->
+        <!-- <h2> Heading</h2> -->
+        <!-- <p> This is pragrap line </p> -->
+        <!-- beforeend-->
+       <!-- </div> -->
+       <!-- afterend-->
 
 
 
-    
+        <!--
+        <button id="btn" name="form1"> Send</button>
+       
+
+        <button id="btn">Click Me!</button>
+         -->
+
+         <img id="image1" width="500" src="vijay image.jpg" alt=" ">
+
+
 
     <script>
+
+        window.addEventListener('DOMContentLoaded',function(){
+            console.log("DOM tree created");
+        })
+
+        let image = document.getElementById("image1")
+
+        image.addEventListener('load',function(){
+            console.log("Fully loaded");
+        })
+
+        /*
+        let btn = document.getElementById("btn");
+
+        function click1(){
+            console.log("click1 is activated");
+        }
+
+        function click2(){
+            console.log("click2 is activated");
+        }
+
+        btn.addEventListener("click",click1);
+        btn.addEventListener("click",click2);
+
+        btn.removeEventListener("click",click2);
+
+
+
+
+         
+        function btnClick(){
+            alert("button was clicked!");
+        }
+
+       let btn = document.getElementById("btn");
+
+       btn.addEventListener('click',function(){
+        console.log("button was clicked!");
+       });
+
+       btn.addEventListener("mouseover",function(){
+        console.log("mouse over is activated");
+       })
+
+       btn.addEventListener("mouseout",function(){
+        console.log("mouse out is activated");
+       })
+
+
+
+
+       
+        let box = document.getElementById("box");
+
+        box.className +="dem";
+
+
+
+        // console.log(box.className);
+
+
+
+
+
+
+
+         
+
+        let lem = document.getElementById("btn");
+
+        let val = btn.removeAttribute("name");
+
+        //  let val = btn.getAttribute("name");
+
+        
+
+       
+       
+         //  console.log(val);
+
+        // btn.setAttribute("class", "form1");
+
+
+
+
+        
+        let elm = document.getElementById("intro");
+
+        let html = "<h1> this is html </h1>";
+
+        elm.insertAdjacentHTML('afterend',html);
+
+
+
+
+         
+        
+
+        let parent = document.getElementById("menu");
+
+        let cloneElm = parent.cloneNode(true);
+
+        document.body.appendChild();
+        console.log(cloneElm);
+
+
+
+
+
+
+         
+        let parent = document.getElementById("menu");
+        let elm = parent.firstElementChild.nextElementSibling;
+
+        document.body.removeChild(parent);
+
+        // console.log(elm);
+
+        // parent.removeChild(elm); 
+
+
+
+        
+        
+        
+        
+      
 
         let list1 = document.getElementById("list");
 
         let item = document.createElement("li");
         item.textContent = "new list 5 ";
 
-        list1.appendChild(item);
+        let pos = list1.firstElementChild.nextElementSibling;
+
+        list1.insertBefore(item,pos);
 
 
         /*
