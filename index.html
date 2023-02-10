@@ -7,6 +7,7 @@
     <title>Document</title>
     <!-- <script  defer src="js/first.js"></script> -->
     <style>
+        /*
         .color{
             color: red;
             background-color: yellow;
@@ -16,12 +17,53 @@
             padding: 100px;
             
         }
+        
+
+        #box{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+
+        }
+        
+        body{
+            height: 1000px;
+            border: 1px solid red;
+        }
+        */
+        body{
+            background-color: beige;
+        }
+        #div1{
+            padding: 100px;
+            background-color: blue;
+        }
+        #btn{
+            padding: 50px;
+            background-color: bisque;
+            color: red;
+            
+        }
+
     </style> 
 
 </head>
 <body>
 
-    <!-- <button id="first" onclick="btn()">Click Me!</button> -->
+    <a href="https://www.google.com">Click me!</a>
+    <!--
+
+    <div id="div1">
+        <button id="boost">Click me!</button>
+    </div>
+
+   
+    
+    <form action="">
+        <input type="text" id="myInput">
+    </form>
+
+     <button id="first" onclick="btn()">Click Me!</button> -->
 
 
     <!--
@@ -106,13 +148,89 @@
        
 
         <button id="btn">Click Me!</button>
-         -->
+         
 
          <img id="image1" width="500" src="vijay image.jpg" alt=" ">
-
-
+        
+        <div id="box" onmouseover="fun()"></div>
+        
+        <div id="box"></div>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus mollitia odio corrupti nobis delectus, vero possimus eius quis ea id ipsum dolorum sit repellendus voluptatem at ad, numquam eveniet consequatur</p>
+        -->
 
     <script>
+
+        /*
+
+        let d = document.getElementById("div1");
+
+        let b = document.getElementById("boost");
+
+        b.addEventListener("click",boostClicked);
+        d.addEventListener("click",divClicked);
+
+        document.body.addEventListener("click",bodyClick);
+
+        function boostClicked(){
+            console.log("button clicked.....");
+        }
+
+        function divClicked(){
+            console.log("div clicked.....");
+        }
+
+        function bodyClick(){
+            console.log("body clicked.....");
+        }
+
+        /*
+
+        let x = document.getElementById("myInput");
+        x.addEventListener("focus", myfocusfunction);
+        x.addEventListener("blur", myblurfunction);
+
+        x.addEventListener("input" ,function(){
+            console.log(this.value);
+        })
+
+        function myfocusfunction(){
+            x.style.background = "yellow";
+        }
+
+        function myblurfunction(){
+            x.style.background = "white";
+        }
+
+
+
+        /*
+        window.addEventListener("scroll", function(){
+            console.log("scrolling....");
+        })
+
+
+        
+        window.addEventListener("keydown",checkkey);
+
+        function checkkey(event){
+            console.log(event);
+        }
+
+
+
+
+        
+            function fun(){
+                alert("right click event!");
+            }
+
+            function dbl(){
+                alert("double click event!");
+            }
+
+
+        
 
         window.addEventListener('DOMContentLoaded',function(){
             console.log("DOM tree created");
@@ -124,7 +242,7 @@
             console.log("Fully loaded");
         })
 
-        /*
+        
         let btn = document.getElementById("btn");
 
         function click1(){
@@ -154,7 +272,7 @@
         console.log("button was clicked!");
        });
 
-       btn.addEventListener("mouseover",function(){
+       btn.addEventListener("onmouseover",function(){
         console.log("mouse over is activated");
        })
 
