@@ -7,6 +7,7 @@
     <title>Document</title>
     <!-- <script  defer src="js/first.js"></script> -->
     <style>
+
         /*
         .color{
             color: red;
@@ -30,7 +31,7 @@
             height: 1000px;
             border: 1px solid red;
         }
-        */
+        
         body{
             background-color: beige;
         }
@@ -44,14 +45,20 @@
             color: red;
             
         }
+        */
+        body{
+            background-color: red;
+        }
 
     </style> 
 
 </head>
 <body>
 
-    <a href="https://www.google.com">Click me!</a>
     <!--
+
+    <a href="https://www.google.com">Click me!</a>
+    
 
     <div id="div1">
         <button id="boost">Click me!</button>
@@ -157,11 +164,79 @@
         <div id="box"></div>
         
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus mollitia odio corrupti nobis delectus, vero possimus eius quis ea id ipsum dolorum sit repellendus voluptatem at ad, numquam eveniet consequatur</p>
+        
+        <button id="btn1">Google</button>
+        <button id="btn2">Yahoo</button>
+        <button id="btn3">close</button>
+        
+        <button id="btn">clear</button>
+        
+        <button id="btn" onclick="fun()">click me!</button>
         -->
 
     <script>
 
-        /*
+        console.log(navigator.appName);
+        console.log(navigator.appVersion);
+        console.log(navigator.appCodeName);
+        console.log(screen.width);
+        console.log(screen.height);
+
+
+
+         /*
+        function fun(){
+            window.location = "https://www.gogle.com";
+        }
+
+
+
+       
+
+        console.log(location.href);
+        console.log(location.pathname);
+        console.log(location.protocol);
+
+        
+         var interval = setInterval(fun,2000);
+
+        function fun(){
+            console.log("please subscribe....");
+        }
+
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click",function(){
+            clearInterval(interval);
+        })
+
+         
+
+        let btn1 = document.getElementById("btn1");
+        let btn2 = document.getElementById("btn2");
+
+        let url = "http://www.google.com";
+        let features = "height=500,width=500";
+        let win;
+
+        btn1.addEventListener("click",function(){
+             win =  window.open(url,"google", features);
+        })
+        btn2.addEventListener("click",function(){
+            window.open("http://www.yahoo.com","google");
+        })
+        btn3.addEventListener("click",function(){
+            win.close();
+        })
+
+
+
+
+       
+
+        console.log(window.outerHeight);
+        console.log(window.outerWidth);
+
+        
 
         let d = document.getElementById("div1");
 
