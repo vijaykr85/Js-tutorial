@@ -173,18 +173,47 @@
         
         <button id="btn" onclick="fun()">click me!</button>
         -->
+        <h1> Master Gun</h1>
 
     <script>
+        let array1 = [1,2,3];
 
+        let array2 = [2,5,6];
+
+        let array3 = [...array1,...array2];
+
+        console.log(array3);
+
+        /*
+        function sum(...args){
+            let result = 0;
+
+            for(let i = 0; i < args.length;i++){
+                result += args[i];
+            }
+
+            console.log(result);
+        }
+        sum(10,15,10);
+
+        /*
+        function talk(msg = "hiii!"){
+            console.log(msg);
+        }
+        talk();
+
+
+
+        /*
         console.log(navigator.appName);
         console.log(navigator.appVersion);
         console.log(navigator.appCodeName);
         console.log(screen.width);
-        console.log(screen.height);
+        console.log(screen.height); 
 
 
 
-         /*
+         
         function fun(){
             window.location = "https://www.gogle.com";
         }
